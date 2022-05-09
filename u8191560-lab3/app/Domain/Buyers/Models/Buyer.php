@@ -16,7 +16,7 @@ class Buyer extends Model
     protected $table = 'buyers';
 
     protected $fillable = [
-        'name', 'lastname','phone', 'address_name', 'city',
+        'name', 'lastname','phone', 'street', 'city',
     ];
 
     public function orders()

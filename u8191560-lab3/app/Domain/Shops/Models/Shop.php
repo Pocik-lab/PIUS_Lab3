@@ -16,7 +16,7 @@ class Shop extends Model
     protected $table = 'shops';
 
     protected $fillable = [
-        'city', 'address_name', 'city', 'street', 'house', 'floor',
+        'city', 'street', 'house', 'floor',
     ];
     public function orders()
     {
