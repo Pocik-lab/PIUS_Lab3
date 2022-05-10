@@ -1,10 +1,10 @@
 <?php 
 
-namespace App\Http\ApiV1\Modules\Items\Resources;
+namespace App\Http\ApiV1\Modules\Shops\Resources;
 
 use App\Http\ApiV1\Support\Resources\BaseJsonResource;
 
-class ItemResource extends BaseJsonResource
+class ShopResource extends BaseJsonResource
 {
     public function toArray($request)
     {
