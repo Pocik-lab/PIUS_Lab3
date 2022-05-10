@@ -14,8 +14,6 @@ class ShopResource extends BaseJsonResource
             'street' => $this->street,
             'house' => $this->house,
             'floor' => $this->floor,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
         ];
     }
 }

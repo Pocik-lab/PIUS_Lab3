@@ -1,7 +1,8 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\Domain\Buyers\Models;
 
+use App\Domain\Buyers\Models\Buyer;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Faker\Factory as Faker;
 /**
@@ -9,6 +10,7 @@ use Faker\Factory as Faker;
  */
 class BuyerFactory extends Factory
 {
+    protected $model = Buyer::class;
     /**
      * Define the model's default state.
      *

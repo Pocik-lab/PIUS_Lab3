@@ -17,8 +17,6 @@ class OrderResource extends BaseJsonResource
             'order_discount' => $this->order_discount,
             'packaging_date' => $this->packaging_date,
             'arrival_date' => $this->arrival_date,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
         ];
     }
 }

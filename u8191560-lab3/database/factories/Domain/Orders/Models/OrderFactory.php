@@ -1,14 +1,16 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Factories\Domain\Orders\Models;
 
+use App\Domain\Orders\Models\Order;
 use Illuminate\Database\Eloquent\Factories\Factory;
-
+use Faker\Factory as Faker;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Order>
  */
 class OrderFactory extends Factory
 {
+    protected $model = Order::class;
     /**
      * Define the model's default state.
      *

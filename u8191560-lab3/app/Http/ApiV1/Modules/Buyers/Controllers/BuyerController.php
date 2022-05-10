@@ -18,7 +18,7 @@ class BuyerController
     public function getList(GetAllBuyersAction $action)
     {
         $buyers = $action->execute();
-        return response()->json($buyers);
+        return response()->json(["data" => $buyers]);
     }
 
     public function get(GetBuyerAction $action, int $buyerId)

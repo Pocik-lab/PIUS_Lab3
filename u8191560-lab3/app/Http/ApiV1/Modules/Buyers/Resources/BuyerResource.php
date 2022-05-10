@@ -15,8 +15,6 @@ class BuyerResource extends BaseJsonResource
             'phone' => $this->phone,
             'street' => $this->street,
             'city' => $this->city,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
         ];
     }
 }
