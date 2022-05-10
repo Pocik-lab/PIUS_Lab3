@@ -3,7 +3,7 @@
 namespace App\Http\ApiV1\Modules\Buyers\Requests;
 
 use App\Http\ApiV1\Support\Requests\BaseFormRequest;
-class UpdateBuyerRequest extends BaseFormRequest
+class ReplaceBuyerRequest extends BaseFormRequest
 {
     public function rules(): array
     {

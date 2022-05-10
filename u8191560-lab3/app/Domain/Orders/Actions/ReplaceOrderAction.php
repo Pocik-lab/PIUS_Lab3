@@ -4,7 +4,7 @@ namespace App\Domain\Orders\Actions;
 
 use App\Domain\Orders\Models\Order;
 
-class UpdateOrderAction
+class ReplaceOrderAction
 {
     public function execute(int $orderId, array $fields): Order
     {

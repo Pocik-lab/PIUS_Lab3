@@ -3,7 +3,7 @@
 namespace App\Http\ApiV1\Modules\Orders\Requests;
 
 use App\Http\ApiV1\Support\Requests\BaseFormRequest;
-class UpdateOrderRequest extends BaseFormRequest
+class ReplaceOrderRequest extends BaseFormRequest
 {
     public function rules(): array
     {

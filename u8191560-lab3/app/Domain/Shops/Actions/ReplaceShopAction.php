@@ -4,7 +4,7 @@ namespace App\Domain\Shops\Actions;
 
 use App\Domain\Shops\Models\Shop;
 
-class UpdateShopAction
+class ReplaceShopAction
 {
     public function execute(int $shopId, array $fields): Shop
     {
