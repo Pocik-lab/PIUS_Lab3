@@ -3,11 +3,14 @@
 namespace App\Http\ApiV1\Modules\Orders\Requests;
 
 use App\Http\ApiV1\Support\Requests\BaseFormRequest;
-class PatchOrderRequest extends BaseFormRequest
+class UpdateOrderRequest extends BaseFormRequest
 {
     public function rules(): array
     {
         return [
+            'shop_id' => 'integer',
+            'buyer_id' => 'integer',
+            'item_id' => 'integer',
             'quanity' => 'integer|min:0',
             'order_discount' => 'integer|min:0|max:100',
             'packaging_date' => 'date',
