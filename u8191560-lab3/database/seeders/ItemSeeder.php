@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Domain\Items\Models\Item;
 use Faker\Factory as Faker;
+
 class ItemSeeder extends Seeder
 {
     /**

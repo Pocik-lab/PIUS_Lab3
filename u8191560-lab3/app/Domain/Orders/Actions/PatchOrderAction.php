@@ -4,7 +4,7 @@ namespace App\Domain\Orders\Actions;
 
 use App\Domain\Orders\Models\Order;
 
-class PatchOrderAction 
+class PatchOrderAction
 {
     public function execute(int $orderId, array $fields): Order
     {

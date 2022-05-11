@@ -4,7 +4,7 @@ namespace App\Domain\Items\Actions;
 
 use App\Domain\Items\Models\Item;
 
-class PatchItemAction 
+class PatchItemAction
 {
     public function execute(int $itemId, array $fields): Item
     {

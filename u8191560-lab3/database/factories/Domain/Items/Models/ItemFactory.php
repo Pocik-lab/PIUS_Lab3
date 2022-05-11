@@ -5,6 +5,7 @@ namespace Database\Factories\Domain\Items\Models;
 use App\Domain\Items\Models\Item;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Faker\Factory as Faker;
+
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Item>
  */

@@ -1,8 +1,9 @@
-<?php 
+<?php
 
 namespace App\Http\ApiV1\Modules\Shops\Requests;
 
 use App\Http\ApiV1\Support\Requests\BaseFormRequest;
+
 class ReplaceShopRequest extends BaseFormRequest
 {
     public function rules(): array

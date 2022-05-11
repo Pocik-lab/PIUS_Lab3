@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace App\Http\ApiV1\Modules\Shops\Controllers;
 

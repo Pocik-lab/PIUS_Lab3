@@ -5,6 +5,7 @@ namespace Database\Factories\Domain\Buyers\Models;
 use App\Domain\Buyers\Models\Buyer;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Faker\Factory as Faker;
+
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Buyer>
  */

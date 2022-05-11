@@ -1,8 +1,9 @@
-<?php 
+<?php
 
 namespace App\Http\ApiV1\Modules\Buyers\Requests;
 
 use App\Http\ApiV1\Support\Requests\BaseFormRequest;
+
 class CreateBuyerRequest extends BaseFormRequest
 {
     public function rules(): array

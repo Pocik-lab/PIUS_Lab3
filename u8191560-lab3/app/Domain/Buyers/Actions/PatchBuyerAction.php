@@ -4,7 +4,7 @@ namespace App\Domain\Buyers\Actions;
 
 use App\Domain\Buyers\Models\Buyer;
 
-class PatchBuyerAction 
+class PatchBuyerAction
 {
     public function execute(int $buyerId, array $fields): Buyer
     {

@@ -1,2 +1,4 @@
 composer.phar
 /vendor/
+tools/
+.php-cs-fixer.cache
