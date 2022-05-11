@@ -2,6 +2,9 @@
 
 namespace Database\Factories\Domain\Orders\Models;
 
+use App\Domain\Buyers\Models\Buyer;
+use App\Domain\Items\Models\Item;
+use App\Domain\Shops\Models\Shop;
 use App\Domain\Orders\Models\Order;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Faker\Factory as Faker;
@@ -20,6 +23,9 @@ class OrderFactory extends Factory
     {
         $this->faker = Faker::create('ru_RU');
         return [
+            'shop_id'=> Shop::factory(),
+            'buyer_id'=> Buyer::factory(),
+            'item_id'=> Item::factory(),
             'quanity' => $this->faker->randomDigitNotNull(),
             'order_discount' => $this->faker->randomDigitNotNull(),
             'packaging_date' => $this->faker->date($format = 'Y-m-d', $max = 'now'),

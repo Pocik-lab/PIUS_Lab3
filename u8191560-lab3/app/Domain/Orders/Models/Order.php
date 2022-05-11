@@ -16,7 +16,7 @@ class Order extends Model
     protected $table = 'orders';
 
     protected $fillable = [
-        'quanity', 'order_discount', 'packaging_date', 'arrival_date',
+        'buyer_id', 'item_id', 'shop_id', 'quanity', 'order_discount', 'packaging_date', 'arrival_date',
     ];
     public function buyer()
     {

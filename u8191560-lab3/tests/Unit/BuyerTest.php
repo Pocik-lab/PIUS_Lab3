@@ -90,8 +90,7 @@ it('put buyer by id with ok response', function() {
     $putBuyer = Buyer::factory()->raw();
     $response = putJson('/api/v1/buyers/'. $buyer->id, $putBuyer);
     $response->assertStatus(200)->assertJson(fn (AssertableJson $json) =>
-        $json->has('data', fn($json) => 
-            $json->where('id', $buyer->id)
+        $json->has('data', fn($json) => $json->where('id', $buyer->id)
             ->where('name', $putBuyer['name'])
             ->where('lastname', $putBuyer['lastname'])
             ->where('phone', $putBuyer['phone'])
@@ -121,8 +120,7 @@ it('patch buyer by id with ok response', function() {
     $patchBuyer = Buyer::factory()->raw();
     $response = patchJson('/api/v1/buyers/'. $buyer->id, $patchBuyer);
     $response->assertStatus(200)->assertJson(fn (AssertableJson $json) =>
-        $json->has('data', fn($json) => 
-            $json->where('id', $buyer->id)
+        $json->has('data', fn($json) => $json->where('id', $buyer->id)
             ->where('name', $patchBuyer['name'])
             ->where('lastname', $patchBuyer['lastname'])
             ->where('phone', $patchBuyer['phone'])

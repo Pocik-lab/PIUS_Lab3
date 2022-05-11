@@ -20,11 +20,6 @@ class OrderSeeder extends Seeder
     public function run()
     {
         $this->faker = Faker::create('ru_RU');
-        Order::factory()
-                ->count(10)
-                ->has(Buyer::factory()->count($this->faker->randomDigitNotNull), 'buyers')
-                ->has(Item::factory()->count($this->faker->randomDigitNotNull), 'items')
-                ->has(Shop::factory()->count($this->faker->randomDigitNotNull), 'shops')
-                ->create();
+        Order::factory()->count(10)->create();
     }
 }
