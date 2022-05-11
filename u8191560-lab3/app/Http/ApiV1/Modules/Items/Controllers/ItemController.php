@@ -18,7 +18,7 @@ class ItemController
     public function getList(GetAllItemsAction $action)
     {
         $items = $action->execute();
-        return response()->json($items);
+        return response()->json(["data" => $items]);
     }
 
     public function get(GetItemAction $action, int $itemId)

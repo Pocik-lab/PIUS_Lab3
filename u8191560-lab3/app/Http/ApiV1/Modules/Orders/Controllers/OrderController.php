@@ -18,7 +18,7 @@ class OrderController
     public function getList(GetAllOrdersAction $action)
     {
         $orders = $action->execute();
-        return response()->json($orders);
+        return response()->json(["data" => $orders]);
     }
 
     public function get(GetOrderAction $action, int $orderId)

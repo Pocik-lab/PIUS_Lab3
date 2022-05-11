@@ -6,7 +6,7 @@ use App\Domain\Buyers\Models\Buyer;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 use Illuminate\Testing\Fluent\AssertableJson;
-use function Pest\Laravel\{get, getJson, postJson, deleteJson, putJson, patchJson};
+use function Pest\Laravel\{getJson, postJson, deleteJson, putJson, patchJson};
 
 uses(TestCase::class,RefreshDatabase::class);
 

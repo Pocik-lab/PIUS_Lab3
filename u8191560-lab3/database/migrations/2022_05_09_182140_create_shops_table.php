@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('shops', function (Blueprint $table) {
             $table->increments('id')->unique();
-            $table->string('adress_name');
             $table->string('city');
             $table->string('street');
             $table->integer('house');

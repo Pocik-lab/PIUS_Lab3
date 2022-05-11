@@ -23,7 +23,7 @@ class ItemFactory extends Factory
             'type' => $this->faker->text(15),
             'name' => $this->faker->text(30),
             'description' => $this->faker->text(250),
-            'cost' => $this->faker->randomDigitNotNull(),
+            'cost' => $this->faker->randomDigitNotNull()*1000,
         ];
     }
 }

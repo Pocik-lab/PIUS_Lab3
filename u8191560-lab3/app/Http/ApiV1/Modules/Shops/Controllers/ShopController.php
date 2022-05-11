@@ -18,7 +18,7 @@ class ShopController
     public function getList(GetAllShopsAction $action)
     {
         $shops = $action->execute();
-        return response()->json($shops);
+        return response()->json(["data" => $shops]);
     }
 
     public function get(GetShopAction $action, int $shopId)
